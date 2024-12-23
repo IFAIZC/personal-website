@@ -1,9 +1,9 @@
-body {
+body { /* applies gradient color for the background */
     background: linear-gradient(to right, #000000, #b9b9b9); /* Horizontal gradient */
-  }
+} 
   
 * {
-    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section {
@@ -11,6 +11,29 @@ section {
     height: 100vh; /* Makes each section full screen */
   }
 
-  a { 
+a { 
     text-decoration: none; /*removes the underline from linking */
-  }
+}
+
+.greetings h3 {
+    font-size: 65px;
+    padding-left: 130px;
+    color: yellow;
+    margin: 0; /* Removes default margin */
+}
+
+.greetings h3 + h3 {
+    margin-top: 10px; /* Add a smaller margin for the second h3 */
+}
+
+
+.bio {
+    color: white;
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+#home {
+    padding-left: 200px;
+    padding-top: 280px;
+}
