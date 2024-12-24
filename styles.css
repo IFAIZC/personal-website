@@ -15,25 +15,65 @@ a {
     text-decoration: none; /*removes the underline from linking */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Please re-write all of the css TO SEE the process */
+#home {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 0; /* Removes extra padding */
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    width: 100%; /* Ensures the content takes full width */
+    max-width: 1200px; /* Optional: Limit maximum width for better alignment */
+}
+
+.left-content {
+    flex: 1; /* Takes available space */
+    padding-left: 50px; /* Adjust left spacing */
+}
+
 .greetings h3 {
     font-size: 65px;
-    padding-left: 130px;
     color: yellow;
     margin: 0; /* Removes default margin */
 }
 
-.greetings h3 + h3 {
-    margin-top: 10px; /* Add a smaller margin for the second h3 */
-}
-
-
 .bio {
     color: white;
-    padding-left: 150px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
-#home {
-    padding-left: 200px;
-    padding-top: 280px;
+.navbar {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+    justify-content: center; /* Align vertically within the section */
+    padding: 20px;
+    row-gap: 35px;
+    padding-right: 145px;
 }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px; /* Adds spacing between links */
+    font-size: 18px;
+}
+
