@@ -1,5 +1,6 @@
 body { /* applies gradient color for the background */
     background: linear-gradient(to right, #000000, #b9b9b9); /* Horizontal gradient */
+    flex-wrap: wrap;
 } 
   
 * {
@@ -46,7 +47,7 @@ a {
 
 .left-content {
     flex: 1; /* Takes available space */
-    padding-left: 50px; /* Adjust left spacing */
+    padding-left: 10px; /* Adjust left spacing */
 }
 
 .greetings h3 {
@@ -68,36 +69,84 @@ a {
     flex-direction: column; /* Arrange links vertically */
     justify-content: center; /* Align vertically within the section */
     row-gap: 50px;
-    padding: 90px;
+    padding: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
     border-radius: 30px;
-    background-color: #474747;
+    background-color: #474747; /* Background color of the navbar */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.1);
+    position: relative; /* For layering effects */
 }
+
 
 .project {
-    color: rgb(0, 0, 0); /* Change the text color to blue */
-    font-weight: bold; /* Make the text bold */
+    color: rgb(0, 0, 0); /* Text color */
+    font-weight: 500;
     text-decoration: underline; /* Underline the text */
-    background-color: rgb(80, 230, 100); /* Add a yellow background */
+    background: linear-gradient(135deg, rgb(80, 230, 100), rgb(5, 105, 18)); /* Green gradient */
     padding: 20px; /* Add some padding */
-    border-radius: 12px; /* Round the corners */
+    border-radius: 25px; /* Round the corners */
+    width: 150px;
+    display: flex;
+    justify-content: center; /* Center the text */
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.contact {
-    color: rgb(0, 0, 0); /* Change the text color to blue */
-    font-weight: bold; /* Make the text bold */
-    text-decoration: underline; /* Underline the text */
-    background-color: rgb(251, 255, 13); /* Add a yellow background */
-    padding: 20px; /* Add some padding */
-    border-radius: 12px; /* Round the corners */
+/* Hover Effect */
+.project:hover {
+    background: rgb(148, 218, 228); /* Change gradient */
+    color: rgb(0, 0, 0); /* Change text color to white */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
 }
+
+
+.contact {
+    color: rgb(0, 0, 0); /* Initial text color */
+    font-weight: 500; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    background: linear-gradient(135deg, rgb(216, 231, 9), rgb(89, 104, 5)); /* Initial gradient */
+    padding: 20px; /* Add some padding */
+    border-radius: 25px; /* Round the corners */
+    width: 150px;
+    display: flex;
+    justify-content: center; /* Center the text */
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Hover Effect */
+.contact:hover {
+    background: rgb(148, 218, 228); /* Change gradient */
+    color: rgb(0, 0, 0); /* Change text color to white */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
+
 
 .github {
     color: rgb(0, 0, 0); /* Change the text color to blue */
-    font-weight: bold; /* Make the text bold */
+    font-weight: 500; /* Make the text bold */
     text-decoration: underline; /* Underline the text */
-    background-color: rgb(243, 65, 65); /* Add a yellow background */
+    background: linear-gradient(135deg, rgb(219, 40, 40), rgb(133, 11, 11)); /* Add a yellow background */
     padding: 20px; /* Add some padding */
-    border-radius: 12px; /* Round the corners */
+    border-radius: 25px; /* Round the corners */
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.github:hover {
+    background: rgb(148, 218, 228); /* Change gradient */
+    color: rgb(0, 0, 0); /* Change text color to white */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
 }
 
 
