@@ -50,14 +50,16 @@ a {
 }
 
 .greetings h3 {
-    font-size: 65px;
+    display: flex;
+    font-size: 100px;
     color: yellow;
+    text-shadow: 10px 8px 2px rgba(0, 0, 0, 0.5);
     margin: 0; /* Removes default margin */
 }
 
 .bio {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
@@ -65,13 +67,41 @@ a {
     display: flex;
     flex-direction: column; /* Arrange links vertically */
     justify-content: center; /* Align vertically within the section */
-    padding: 20px;
-    row-gap: 35px;
-    padding-right: 145px;
+    row-gap: 50px;
+    padding: 90px;
+    border-radius: 30px;
+    background-color: #474747;
 }
 
+.project {
+    color: rgb(0, 0, 0); /* Change the text color to blue */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    background-color: rgb(80, 230, 100); /* Add a yellow background */
+    padding: 20px; /* Add some padding */
+    border-radius: 12px; /* Round the corners */
+}
+
+.contact {
+    color: rgb(0, 0, 0); /* Change the text color to blue */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    background-color: rgb(251, 255, 13); /* Add a yellow background */
+    padding: 20px; /* Add some padding */
+    border-radius: 12px; /* Round the corners */
+}
+
+.github {
+    color: rgb(0, 0, 0); /* Change the text color to blue */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: underline; /* Underline the text */
+    background-color: rgb(243, 65, 65); /* Add a yellow background */
+    padding: 20px; /* Add some padding */
+    border-radius: 12px; /* Round the corners */
+}
+
+
 .navbar a {
-    color: white;
     text-decoration: none;
     margin-bottom: 10px; /* Adds spacing between links */
     font-size: 18px;
